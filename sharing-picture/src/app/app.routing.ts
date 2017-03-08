@@ -2,6 +2,7 @@
  import { Routes, RouterModule } from '@angular/router';
 
  import { HomeComponent } from './components/home.component';
+ import { Register } from './components/register.component';
 
  const appRoutes : Routes = [
    {
@@ -12,6 +13,10 @@
    {
      path: 'home',
      component: HomeComponent
+   },
+   {
+     path: 'register',
+     component: Register
    }
  ];
 
