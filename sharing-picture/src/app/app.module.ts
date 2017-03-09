@@ -10,13 +10,15 @@ import { PhotoList } from './components/photo-list.component';
 import { SidePanel } from './components/side-panel.component';
 import { NavBar } from './components/nav-bar.component';
 import { Register } from './components/register.component';
+import { Login } from './components/login.component';
 
 import { PhotoService } from './services/photo.service';
 import { RegisterService } from './services/register.service';
+import { LoginService } from './services/login.service';
 
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent,PhotoList,SidePanel,NavBar,Register
+    AppComponent,HomeComponent,PhotoList,SidePanel,NavBar,Register,Login
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { RegisterService } from './services/register.service';
     HttpModule,
     routing
   ],
-  providers: [PhotoService,RegisterService],
+  providers: [PhotoService,RegisterService,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
