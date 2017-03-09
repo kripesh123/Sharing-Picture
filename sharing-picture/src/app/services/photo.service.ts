@@ -9,7 +9,7 @@ export class PhotoService{
   constructor(private http:Http){}
 
   getPhotos(){
-    let url = "http://localhost:8080/photo/allPhotos";
+    let url = "http://localhost:8080/api/v1/photo/allPhotos";
     return this.http.get(url);
   }
 }
