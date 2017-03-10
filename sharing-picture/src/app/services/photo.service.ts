@@ -12,4 +12,8 @@ export class PhotoService{
     let url = "http://localhost:8080/api/v1/photo/allPhotos";
     return this.http.get(url);
   }
+
+  getPhotosByUser(user: User){
+    let url = "http://localhost:80080/rest/photo/user";
+  }
 }
