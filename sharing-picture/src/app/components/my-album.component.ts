@@ -21,7 +21,8 @@ export class MyAlbum {
         this.user = JSON.parse(JSON.parse(JSON.stringify(user))._body);
         console.log(this.user);
         this.photoService.getPhotosByUser(this.user).subscribe(
-          photos => {console.log(this.photos = JSON.parse(JSON.parse(JSON.stringify(user))._body).photoList);
+          photos => {
+            this.photos = JSON.parse(JSON.parse(JSON.stringify(user))._body).photoList;
           },
           error => console.log(error)
         );
@@ -29,7 +30,7 @@ export class MyAlbum {
       error => console.log(error)
     );
   }
-  
+
   onSelect(photo: Photo){
     this.selectedPhoto = photo;
     this.router.navigate(['/image-detail',this.selectedPhoto.photoId]);
