@@ -20,7 +20,7 @@ export class PhotoList{
   );
   }
 
-  onSelect(photo:Photo) {
+  onSelect(photo: Photo) {
    this.selectedPhoto = photo;
    this.router.navigate(['/image-detail', this.selectedPhoto.photoId]);
  }
